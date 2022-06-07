@@ -7,4 +7,5 @@ TEMPLATE_DIRS = (
 
 def index(request):
     today = datetime.datetime.now().date()
-    return render(request, "index.html", {"today": today})
+    context = {"today": today}
+    return render(request, "index.html", context)

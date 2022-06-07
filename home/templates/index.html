@@ -1,23 +1,31 @@
 {% extends "nrwebtools/base.html" %}
 {% block content %}
 {% load static %}
-<h1>NR Web Tools</h1>
-<p>Today's date is {{today}}.</p>
-<div class="card" style="width: 20rem; margin: 2rem">
-  <img src="{% static 'img/navy_logo.png' %}" class="card-img-top" alt="..." style="margin: 1rem auto 1rem auto; width: 10rem; height: auto">
-  <div class="card-body">
-    <h5 class="card-title">Block 29 Formatter</h5>
-    <p class="card-text">Formats data for Block 29 of FITREPs/evals.
-    </p><center><a href="/block29app/" class="btn btn-primary">Open</a></center>
-  </div>
-</div>
 
-<div class="card" style="width: 20rem; margin: 2rem">
-  <img src="{% static 'img/navy_logo.png' %}" class="card-img-top" alt="..." style="margin: 1rem auto 1rem auto; width: 10rem; height: auto">
-  <div class="card-body">
-    <h5 class="card-title">RUAD Parser</h5>
-    <p class="card-text">Parses unit RUAD into a reformatted Excel spreadsheet and PowerPoint slides.
-    </p><center><a href="#" class="btn btn-primary">Open</a></center>
+<div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom">NR Web Tools</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+    <div class="col d-flex align-items-start">
+      <div>
+        <h3>Block 29 Formatter</h3>
+        <p>Formats data for Block 29 of FITREPs/evals.</p>
+        <a href="/block29app/" class="btn btn-primary">
+          Open
+        </a>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-start">
+      <div>
+        <h3>RUAD Parser</h3>
+        <p>Parses unit RUAD into a reformatted Excel spreadsheet and PowerPoint slides.</p>
+        <a href="#" class="btn btn-primary">
+          Open
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
 
