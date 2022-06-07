@@ -1,0 +1,26 @@
+{% extends "nrwebtools/base.html" %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9" style="margin: 1rem auto 1rem auto;">
+            <h3>Block 29 Formatter</h3>
+            <p>Are you a frustrated admin officer, tired of hodge-podge formatting of Block 29? This app is designed
+                for you! Fill in the appropriate fields and spend zero brain power on formatting Block 29!</p>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        {% crispy form %}
+                    </div>
+                    <hr />
+                    <h4>Formatted Block 29</h4>
+                    <p>{{ formatted }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

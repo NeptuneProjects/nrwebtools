@@ -1,0 +1,24 @@
+{% extends "nrwebtools/base.html" %}
+{% block content %}
+{% load static %}
+<h1>NR Web Tools</h1>
+<p>Today's date is {{today}}.</p>
+<div class="card" style="width: 20rem; margin: 2rem">
+  <img src="{% static 'img/navy_logo.png' %}" class="card-img-top" alt="..." style="margin: 1rem auto 1rem auto; width: 10rem; height: auto">
+  <div class="card-body">
+    <h5 class="card-title">Block 29 Formatter</h5>
+    <p class="card-text">Formats data for Block 29 of FITREPs/evals.
+    </p><center><a href="/block29app/" class="btn btn-primary">Open</a></center>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem; margin: 2rem">
+  <img src="{% static 'img/navy_logo.png' %}" class="card-img-top" alt="..." style="margin: 1rem auto 1rem auto; width: 10rem; height: auto">
+  <div class="card-body">
+    <h5 class="card-title">RUAD Parser</h5>
+    <p class="card-text">Parses unit RUAD into a reformatted Excel spreadsheet and PowerPoint slides.
+    </p><center><a href="#" class="btn btn-primary">Open</a></center>
+  </div>
+</div>
+
+{% endblock %}
