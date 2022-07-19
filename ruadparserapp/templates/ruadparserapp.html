@@ -1,0 +1,63 @@
+{% extends "nrwebtools/base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9" style="margin: 1rem auto 1rem auto;">
+            <h3>RUAD Parser</h3>
+            <p>RUAD data can be cumbersome to work with. For my admin officer workflow, I was manually parsing the data
+                every drill weekend and copying/pasting into Excel and Powerpoint to display what was most useful for
+                the CO/SEL and fellow department heads. Rather than expending a thousand mouseclicks and a couple hours
+                every DWE, I wrote a program to parse the information automatically and to rewrite it into an Excel
+                spreadsheet and Powerpoint.</p>
+            <h4>
+                Program requirements:
+            </h4>
+            <ul>
+                <li>
+                    Windows 10/11
+                </li>
+                <li>
+                    Microsoft Office; the program makes use of Visual Basic bindings to manipulate the files. Be sure to
+                    close out of Microsoft Excel and PowerPoint before using the program.
+                </li>
+            </ul>
+            <h4>
+                Program inputs:
+            </h4>
+            <ul>
+                <li>
+                    Smart RUAD downlaoded from <a href="https://nrrm.nrre.navy.mil/"
+                        target="_blank">NRRM</a> (requires special access). Previously an Excel
+                    format was available for download (.xlsx), but it seems that as of July 2022 only .csv format is
+                    available. RUAD Parser works with both formats.
+                </li>
+                <li>
+                    Note: The smart RUAD should be formatted as <TRUIC>_SMART_RUAD, where <TRUIC> is your unit's TRUIC.
+                </li>
+            </ul>
+            <h4>
+                Program outputs:
+            </h4>
+            <ul>
+                <li>
+                    Formatted Excel spreadsheet.
+                </li>
+                <li>
+                    Formatted PowerPoint slides.
+                </li>
+            </ul>
+            <h4>
+                Download
+            </h4>
+            <p>
+                RUADParser is available for download from
+                <a href="https://sourceforge.net/projects/ruad-parser/files/" target="_blank">Sourceforge</a> (295 MB).
+            </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

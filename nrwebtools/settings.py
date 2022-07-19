@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'home',
-    'block29app'
+    'block29app',
+    'ruadparserapp'
 ]
 
 MIDDLEWARE = [
