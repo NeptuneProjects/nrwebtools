@@ -2,31 +2,68 @@
 {% block content %}
 {% load static %}
 
-<div class="container px-4 py-5" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">NR Web Tools</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
-    <div class="col d-flex align-items-start">
-      <div>
-        <h3>Block 29 Formatter</h3>
-        <p>Formats data for Block 29 of FITREPs/evals.</p>
-        <a href="/block29app/" class="btn btn-primary">
-          Open
-        </a>
+<main role="main" class="container">
+  <div class="container px-4 py-5" id="hanging-icons">
+
+    <h2 class="mt-1 border-bottom">NR Web Tools</h2>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3>Block 29 Formatter</h3>
+          <p>Formats data for Block 29 of FITREPs/evals.</p>
+          <a href="/block29app/" class="btn btn-primary">
+            Open
+          </a>
+        </div>
+      </div>
+
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3>RUAD Parser</h3>
+          <p>Parses unit RUAD into a reformatted Excel spreadsheet and PowerPoint slides.</p>
+          <a href="/ruadparserapp/" class="btn btn-primary">
+            Open
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="col d-flex align-items-start">
-      <div>
-        <h3>RUAD Parser</h3>
-        <p>Parses unit RUAD into a reformatted Excel spreadsheet and PowerPoint slides.</p>
-        <a href="/ruadparserapp/" class="btn btn-primary">
-          Open
-        </a>
-      </div>
+    <h2 class="mt-1 border-bottom">About</h2>
+    <div>
+      <p>
+        This website is a child of two primal feelings: frustration and curiosity. Let's start with curiosity. In 2017,
+        I began learning Python as part of my PhD research. Once I got the hang of it, I realized I enjoyed the
+        portability, modularity, and expressiveness available within the language and began to look around
+        and think, "Gee, I could automate that with a Python script." At the same time, I was growing tired and
+        resentful of the amount of time I was spending on menial, repetitive tasks required for my Navy Reserve drill
+        weekends. Since I'd been growing interested in writing scientific web applications for educational
+        demonstrations, I figured this would be a good start to learning web app development. I hope by sharing these
+        tools that others may be able to
+        focus their time on more rewarding endeavors.
+      </p>
+    </div>
+
+    <h2 class="mt-5 border-bottom">Links</h2>
+    <div>
+      <ul class="list-unstyled">
+        <li class="py-1">
+          <a href="https://www.mynrh.navy.mil/" target="_blank">my Navy Reserve Homeport (myNRH)</a>
+        </li>
+        <li class="py-1">
+          <a href="https://my.navy.mil/quick-links.html" target="_blank">My Navy Portal: Quick Links</a>
+        </li>
+        <li class="py-1">
+          <a href="https://github.com/neptuneprojects" target="_blank">Personal GitHub</a>
+        </li>
+        <li class="py-1">
+          <a href="https://wjenkins.me" target="_blank">Personal Website</a>
+        </li>
+      </ul>
     </div>
 
   </div>
-</div>
+</main>
 
 {% endblock %}
